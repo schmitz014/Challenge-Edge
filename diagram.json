@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "author": "Pedro Schmitz",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -118.2, "left": -198.8, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 154.2, "left": -211.8, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 150.4,
+      "left": 120.8,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -114.9,
+      "left": -34.2,
+      "attrs": { "temperature": "47.1", "humidity": "42" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 13.55,
+      "left": -76.8,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    [ "uno:5V", "bb1:bp.1", "red", [ "v28.7", "h-178.6", "v-259.2" ] ],
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v9.5", "h-178.5", "v-278.4" ] ],
+    [ "bb1:bn.16", "bb1:20b.j", "black", [ "v0" ] ],
+    [ "uno:13", "bb1:18b.j", "green", [ "v-76.8", "h77.2" ] ],
+    [ "bb1:17b.j", "bb1:bp.14", "red", [ "v0" ] ],
+    [ "bb1:11b.j", "bb1:bp.9", "red", [ "v0" ] ],
+    [ "r1:1", "bb1:11b.h", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:17b.h", "", [ "$bb" ] ],
+    [ "lcd1:GND", "bb1:bn.25", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "bb1:bp.24", "red", [ "h-28.8", "v-124.7" ] ],
+    [ "lcd1:SDA", "uno:A4", "yellow", [ "h-48", "v163.4", "h-28.8" ] ],
+    [ "lcd1:SCL", "uno:A5", "cyan", [ "h-57.6", "v134.7" ] ],
+    [ "dht1:VCC", "bb1:17b.f", "", [ "$bb" ] ],
+    [ "dht1:SDA", "bb1:18b.f", "", [ "$bb" ] ],
+    [ "dht1:NC", "bb1:19b.f", "", [ "$bb" ] ],
+    [ "dht1:GND", "bb1:20b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
