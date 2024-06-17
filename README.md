@@ -1,11 +1,11 @@
 Projeto de Monitoramento de Condições Climáticas e Recomendação de Pneus:
 
 - Membros da Equipe
-  	- Jeniffer De Moraes
-  	- Maria Eduarda
-	- Matheus Diniz
-   	- Pedro Schmitz
-	- Rafael Porto
+	- Jeniffer Moraes - 555448
+ 	- Maria Eduarda - 558457
+ 	- Matheus Diniz - 555683
+ 	- Pedro Schmitz - 555758
+ 	- Rafael Porto – 554939
 
 - Link do vídeo explicativo:
 
