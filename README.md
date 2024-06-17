@@ -1,5 +1,16 @@
 Projeto de Monitoramento de Condições Climáticas e Recomendação de Pneus:
 
+- Membros da Equipe
+  	- Jeniffer De Moraes
+  	- Maria Eduarda
+	- Matheus Diniz
+   	- Pedro Schmitz
+	- Rafael Porto
+
+- Link do vídeo explicativo:
+
+ 	https://youtu.be/MJdMgh-6m3w?si=SofvyDNKieg05kqY 
+
 - Descrição do Projeto
 
 	Este projeto visa criar um sistema de monitoramento de condições climáticas usando um sensor de temperatura e umidade DHT22 e um display LCD I2C. O sistema lê a temperatura e a umidade, exibe essas informações no display e recomenda o tipo de pneu adequado para as condições climáticas atuais. É projetado para uso em ambientes de corrida, onde a escolha correta dos pneus é crucial para desempenho e segurança.
@@ -20,10 +31,3 @@ No geral, este código é usado para monitorar condições ambientais e fornecer
 
 - Tecnologias Utilizadas
 	- C++
-
-- Membros da Equipe
-  	- Jeniffer De Moraes
-  	- Maria Eduarda
-	- Matheus Diniz
-   	- Pedro Schmitz
-	- Rafael Porto
